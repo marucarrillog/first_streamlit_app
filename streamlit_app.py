@@ -22,7 +22,8 @@ st.header("Fruityvice Fruit Advice!")
 fruityvice_response = requests.get("https://fruityvice.com/api/fruit/watermelon")
 # represent json request as a table
 fruityvice_normalized = pandas.json_normalize(fruityvice_response.json())
-# write your own comment - what does this do?
 st.dataframe(fruityvice_normalized)
-
+# input box 
+fruit_choice = st.text_input('What fruit would you like information about?','Kiwi')
+st.write('The user entered ', fruit_choice)
 

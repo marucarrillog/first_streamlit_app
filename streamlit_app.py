@@ -37,4 +37,4 @@ st.header("The fruit load list contains:")
 st.dataframe(my_data_rows)
 
 fruit_choice = st.text_input('What fruit would you like to add?','jackfruit')
-st.write('The user entered ', fruit_choice)
+st.write('Thanks for adding jackfruit', fruit_choice)
